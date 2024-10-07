@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -64,4 +63,4 @@ React + firebase + GraphQL 쇼핑몰 사이트
 - TypeScript
 - FrameWork: React
 - DataBase : Firebase
->>>>>>> 70d569ff7d7ccf7c6c8506e36b815760f1983cab
+
