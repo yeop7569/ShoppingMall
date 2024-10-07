@@ -1,66 +1,33 @@
-# React + TypeScript + Vite
+# ShoppingMall-Toy Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🖥 프로젝트 소개
+React, Firebase, GraphQL을 이용하여 구성한 쇼핑몰 사이트입니다. 쇼핑몰 사이트의 구조를 참고하여 개발했습니다.
 
-Currently, two official plugins are available:
+## 📆 개발 기간
+2022.10.07 - 현재 (미정)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ⚙ 개발 환경
+- **TypeScript**
+- **Framework**: React
+- **Database**: Firebase
 
-## Expanding the ESLint configuration
+## ESLint 설정
+이 템플릿은 Vite에서 React를 사용하여 HMR 및 ESLint 규칙을 설정하는 최소한의 구성을 제공합니다.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 공식 플러그인
+- `@vitejs/plugin-react`: Babel을 사용하여 Fast Refresh 제공
+- `@vitejs/plugin-react-swc`: SWC를 사용하여 Fast Refresh 제공
 
-- Configure the top-level `parserOptions` property like this:
+### ESLint 구성 확장
+생산 애플리케이션을 개발 중이라면, 다음과 같이 타입 인식 lint 규칙을 활성화하는 것이 좋습니다:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-=======
-# ShoppingMall-Toy project
-
-React + firebase + GraphQL 쇼핑몰 사이트 
-
-## 🖥  프로젝트 소개 
-쇼핑몰 사이트 구성을 참고 하여 만든 사이트 입니다.
-
-## 📆  개발 기간 
-22.10.07 - 미정
-
-## ⚙ 개발 환경  
-- TypeScript
-- FrameWork: React
-- DataBase : Firebase
-
+1. **top-level `parserOptions` 구성**:
+   ```javascript
+   export default tseslint.config({
+     languageOptions: {
+       parserOptions: {
+         project: ['./tsconfig.node.json', './tsconfig.app.json'],
+         tsconfigRootDir: import.meta.dirname,
+       },
+     },
+   });
